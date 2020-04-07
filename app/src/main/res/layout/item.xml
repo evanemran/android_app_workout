@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#4C4B4B"
+            android:layout_height="300dp"
+            >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:background="#4C4B4B"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pushup">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/ename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pushup"
+                android:layout_below="@+id/image"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:textSize="24sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/eset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 min."
+                android:layout_below="@+id/ename"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

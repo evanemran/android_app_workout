@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtapp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Workout App"
+        android:textAlignment="center"
+        android:background="#019031"
+        android:paddingTop="20dp"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:id="@+id/viewpager"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never"
+        android:layout_below="@+id/txtapp"
+        android:clipToPadding="false"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnstart"
+        android:text="Start"
+        android:textColor="#fff"
+        android:paddingLeft="30dp"
+        android:background="@drawable/btnstart"
+        android:paddingRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        >
+    </Button>
+
+</RelativeLayout>
