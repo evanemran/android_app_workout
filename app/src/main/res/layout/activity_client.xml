@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#74B9FF"
+    tools:context=".ClientActivity">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/clientl">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtabt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@+id/imglogo"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:text="This app was built for LCO Home Workout as a mobile app challenge.">
+
+    </TextView>
+    <Button
+        android:id="@+id/btnyt"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="View Challenge"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtabt"
+        android:background="@drawable/btnport">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnport"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnyt"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btnport"
+        android:text="About Me">
+
+    </Button>
+
+
+</RelativeLayout>

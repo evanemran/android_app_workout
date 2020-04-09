@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2475B0"
+    tools:context=".DetailActivity">
+    <ImageView
+        android:id="@+id/imgdt"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pushup"
+        android:transitionName="example_transition">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:text="Exercise increases energy levels
+Exercise improves both the strength and the efficiency of your cardiovascular system to get the oxygen and nutrients to your muscles.  When your cardiovascular system works better everything seems easier and you have more energy for the fun stuff in life.
+
+Exercise improves muscle strength
+Staying active keeps muscles strong and joints, tendons and ligaments flexible, allowing you to move more easily and avoid injury. Strong muscles and ligaments reduce your risk of joint and lower back pain by keeping joints in proper alignment. They also improve coordination and balance.
+">
+
+    </TextView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imggif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/pushupgif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Example clips"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center">
+
+    </TextView>
+
+</LinearLayout>
+</ScrollView>

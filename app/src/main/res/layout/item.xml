@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_vertical">
+    android:gravity="center_vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -24,6 +24,7 @@
                 android:background="#4C4B4B"
                 android:layout_height="200dp"
                 android:scaleType="fitCenter"
+                android:transitionName="example_transition"
                 android:src="@drawable/pushup">
 
             </ImageView>
@@ -53,6 +54,17 @@
                 android:textSize="20sp">
 
             </TextView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/tik"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+            </ImageView>
 
         </RelativeLayout>
 
